@@ -49,4 +49,38 @@ Student student1 = new Student(); //1. Student 객체 생성
 Student student1 = x001; //2. new Student()의 결과로 x001 참조값 반환
 student1 = x001; //3. 최종 결과
 ```
+---
+
+#### 객체에 값 대입
+
+객체가 가지고 있는 멤버 변수에 값을 대입하려면 먼저 객체에 접근해야 한다.
+
+객체에 접근하려면 ```.``` 키워드를 사용하면 된다.
+
+이 키워드는 변수(student1)에 들어있는 참조값(x001)을 읽어서 메모리에 존재하는 객체에 접근한다.
+
+```
+student1.name = "학생1" //1.student1 객체의 name 멤버 변수에 값 대입
+x001.name = "학생1" //2.변수에 있는 참조값을 통해 실제 객체에 접근, 해당 객체의 name 멤버 변수에 값 대입
+```
+student1. 이라고 하면 student1 변수가 가지고 있는 참조값을 통해 실체 객체에 접근한다.
+
+student1은 x001이라는 참조값을 가지고 있으므로 x001 위치에 있는 Student 객체에 접근한다.
+
+```student1.name="학생1"``` **코드 실행 전**
+
+![Dot](/src/img/variableDot.png)
+
+```student1.name="학생1"``` **코드 실행 후**
+
+![Dot2](/src/img/variableDot2.png)
++ student1.name 코드를 통해 .(dot)키워드가 사용됐다. student1 변수가 가지고 있는 참조값을 통해 실제 객체에 접근한다.
++ x001.name = "학생1" : x001 객체가 있는 곳의 name 멤버 변수에 "학생1" 데이터가 저장된다.
+
+#### 객체 값 읽기
+
+![read](/src/img/readVariable.png)
+
+ ![read2](/src/img/readVariable2.png)
+
 
