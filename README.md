@@ -181,3 +181,41 @@ Student s2 = s1;
   + 메서드 내부에서 파라미터의 값을 변경해도, 호출자의 변수 값에는 영향이 없다.
 + **참조형**:메서드로 참조형 데이터를 전달하면, 참조값이 복사되어 전달된다.
   + 메서드 내부에서 파라미터로 전달된 객체의 멤버 변수를 변경하면, 호출자의 객체도 변경된다.
+
+---
+
+### 변수와 초기화
+
+**변수의 종류**
+- 멤버변수(필드) : 클래스에 선언
+- 지역 변수 : 메서드에 선언, 매개변수도 지역 변수의 한 종류
+
+**멤버 변수, 필드 예시**
+```
+public class Student {
+    String name;
+    int age;
+    int grade;
+}
+```
+name,age,grade는 멤버 변수
+
+**지역 변수 예시**
+```
+public class ClassStart3{
+  public static void main(String[] args){
+      Student student1;
+      student1 = new Student();
+      Student student2 = new Student();
+  }
+}
+```
+student1, student2 는 지역 변수
+
+**변수의 값 초기화**
+- 멤버 변수 : 자동 초기화
+  - 인스턴스의 멤버 변수는 인스턴스를 생성할 때 자동으로 초기화된다.
+  - 숫자(int) = 0 , boolean = false, 참조형 = null
+- 지역 변수 : 수동 초기화
+  - 지역 변수는 항상 직접 초기화해야 한다.
+
